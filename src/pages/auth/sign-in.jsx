@@ -72,7 +72,7 @@ style={{ backgroundColor: '#eef3ff',    border: 'none',
     fontWeight: '600',
     height: '60px',
     marginBottom: '30px',
-    padding: '15px 10px'}}
+    padding: '15px 25px'}}
               className="rounded-lg font-poppins mb-5 p-[15px] px-[25px] font-semibold text-[14px] bg-custom-blue rounded-[50px] h-[60px] border-none"
               labelProps={{
                 className: "before:content-none after:content-none",
@@ -95,7 +95,7 @@ style={{ backgroundColor: '#eef3ff',   border: 'none',
     fontWeight: '600',
     height: '60px',
     marginBottom: '30px',
-    padding: '15px 10px'}}
+    padding: '15px 25px'}}
                 placeholder="MOT DE PASS"
                 className="rounded-lg p-[15px] px-[25px] font-semibold text-[14px] bg-custom-blue rounded-[50px] h-[60px] font-poppins border-none"
                 labelProps={{

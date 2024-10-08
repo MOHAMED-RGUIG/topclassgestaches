@@ -40,7 +40,8 @@ const handleLogin = async (e) => {
         localStorage.setItem("currentUser", JSON.stringify(user));
         localStorage.setItem("loggedInUser", response.data.data.USR);
         const userParams = encodeURIComponent(JSON.stringify(user));
-        window.location.href = `https://topclass1.vercel.app/homescreen?user=${userParams}`;
+        
+        // window.location.href = `https://topclass1.vercel.app/homescreen?user=${userParams}`;
         // Redirect to dashboard
         navigate('/dashboard/home');
       }

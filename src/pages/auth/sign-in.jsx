@@ -64,15 +64,15 @@ export function SignIn() {
             <Input
               size="lg"
               placeholder="NOM D'UTILISATEUR"
-style={{ backgroundColor: '#eef3ff',    border: none,
-    borderRadius: 25px,
-    color: #000 !important,
-    fontFamily: poppins,
-    fontSize: 14px,
-    fontWeight: 600,
-    height: 60px,
-    marginBottom: 30px,
-    padding: 15px 10px }}
+style={{ backgroundColor: '#eef3ff',    border: 'none',
+    borderRadius: '25px',
+    color: '#000 !important',
+    fontFamily: 'poppins',
+    fontSize: '14px',
+    fontWeight: '600',
+    height: '60px',
+    marginBottom: '30px',
+    padding: '15px 10px'}}
               className="rounded-lg font-poppins mb-5 p-[15px] px-[25px] font-semibold text-[14px] bg-custom-blue rounded-[50px] h-[60px] border-none"
               labelProps={{
                 className: "before:content-none after:content-none",
@@ -87,15 +87,15 @@ style={{ backgroundColor: '#eef3ff',    border: none,
               <Input
                 type={showPassword ? "text" : "password"}
                 size="lg"
-style={{ backgroundColor: '#eef3ff',    border: none,
-    borderRadius: 25px,
-    color: #000 !important,
-    fontFamily: poppins,
-    fontSize: 14px,
-    fontWeight: 600,
-    height: 60px,
-    marginBottom: 30px,
-    padding: 15px 10px }}
+style={{ backgroundColor: '#eef3ff',   border: 'none',
+    borderRadius: '25px',
+    color: '#000 !important',
+    fontFamily: 'poppins',
+    fontSize: '14px',
+    fontWeight: '600',
+    height: '60px',
+    marginBottom: '30px',
+    padding: '15px 10px'}}
                 placeholder="MOT DE PASS"
                 className="rounded-lg p-[15px] px-[25px] font-semibold text-[14px] bg-custom-blue rounded-[50px] h-[60px] font-poppins border-none"
                 labelProps={{

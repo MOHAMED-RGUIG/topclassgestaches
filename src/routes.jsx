@@ -13,8 +13,8 @@ import {
   BellIcon,
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications , AddTask, CreateAccount, PageOnHold,} from "@/pages/dashboard";
-
-      const userParams = encodeURIComponent(JSON.stringify(user));
+const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    const userParams = encodeURIComponent(JSON.stringify(currentUser));
         
         
 const icon = {

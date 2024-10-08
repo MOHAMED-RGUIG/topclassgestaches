@@ -64,6 +64,7 @@ export function SignIn() {
             <Input
               size="lg"
               placeholder="NOM D'UTILISATEUR"
+style={{ backgroundColor: '#eef3ff' }}
               className="rounded-lg font-poppins mb-5 p-[15px] px-[25px] font-semibold text-[14px] bg-custom-blue rounded-[50px] h-[60px] border-none"
               labelProps={{
                 className: "before:content-none after:content-none",
@@ -78,6 +79,7 @@ export function SignIn() {
               <Input
                 type={showPassword ? "text" : "password"}
                 size="lg"
+style={{ backgroundColor: '#eef3ff' }}
                 placeholder="MOT DE PASS"
                 className="rounded-lg p-[15px] px-[25px] font-semibold text-[14px] bg-custom-blue rounded-[50px] h-[60px] font-poppins border-none"
                 labelProps={{

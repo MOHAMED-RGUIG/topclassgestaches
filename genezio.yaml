@@ -5,7 +5,7 @@ frontend:
         deploy:
             - npm install --legacy-peer-deps
             - npm run build
-    subdomain: topclassgestiontaches
-name: topclassgestiontaches
+    subdomain: topclassgestaches
+name: topclassgestaches
 region: us-east-1
 yamlVersion: 2

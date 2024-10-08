@@ -47,7 +47,7 @@ export const routes = [
         icon: <ShoppingCartIcon {...icon} />,
         name: "Ajouter commande", // Add order
         path: "/ajouter-commande",
-        element: "`https://topclass1.vercel.app/homescreen?user=${userParams}`", // Assuming you have a component for this
+        element: "https://topclass1.vercel.app/homescreen?user=${userParams}", // Assuming you have a component for this
       },
       {
         icon: <ListBulletIcon {...icon} />,

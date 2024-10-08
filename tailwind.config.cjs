@@ -8,6 +8,9 @@ module.exports = withMT({
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+ colors: {
+        'custom-blue': '#eef3ff',
+      },
     },
   },
   plugins: [],

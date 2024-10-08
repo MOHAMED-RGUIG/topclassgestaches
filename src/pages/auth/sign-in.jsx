@@ -79,7 +79,7 @@ export function SignIn() {
                 type={showPassword ? "text" : "password"}
                 size="lg"
                 placeholder="MOT DE PASS"
-                className="rounded-lg p-[15px] px-[25px] font-semibold text-[14px] bg-[#eef3ff]   bg-[#eef3ff] rounded-[50px] h-[60px] font-poppins border-none"
+                className="rounded-lg p-[15px] px-[25px] font-semibold text-[14px] bg-[#eef3ff] rounded-[50px] h-[60px] font-poppins border-none"
                 labelProps={{
                   className: "before:content-none after:content-none",
                 }}

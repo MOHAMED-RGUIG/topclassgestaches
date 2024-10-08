@@ -14,7 +14,9 @@ import {
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications , AddTask, CreateAccount, PageOnHold,} from "@/pages/dashboard";
 
-
+      const userParams = encodeURIComponent(JSON.stringify(user));
+        
+        
 const icon = {
   className: "w-5 h-5 text-inherit",
 };
@@ -45,7 +47,7 @@ export const routes = [
         icon: <ShoppingCartIcon {...icon} />,
         name: "Ajouter commande", // Add order
         path: "/ajouter-commande",
-        element: <PageOnHold />, // Assuming you have a component for this
+        element: "`https://topclass1.vercel.app/homescreen?user=${userParams}`", // Assuming you have a component for this
       },
       {
         icon: <ListBulletIcon {...icon} />,

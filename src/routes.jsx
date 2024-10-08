@@ -13,8 +13,7 @@ import {
   BellIcon,
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications , AddTask, CreateAccount, PageOnHold,} from "@/pages/dashboard";
-const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    const userParams = encodeURIComponent(JSON.stringify(currentUser));
+
         
         
 const icon = {
@@ -47,7 +46,7 @@ export const routes = [
         icon: <ShoppingCartIcon {...icon} />,
         name: "Ajouter commande", // Add order
         path: "/ajouter-commande",
-        element: "https://topclass1.vercel.app/homescreen?user=${userParams}", // Assuming you have a component for this
+        element:  <PageOnHold />, // Assuming you have a component for this
       },
       {
         icon: <ListBulletIcon {...icon} />,

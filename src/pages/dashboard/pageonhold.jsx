@@ -17,7 +17,7 @@ export function PageOnHold() {
     const loggedInUser = localStorage.getItem("currentUser");
     if (loggedInUser) {
       const userParams = encodeURIComponent(loggedInUser);
-      window.location.href = `https://topclass1.vercel.app/orders?user=${userParams}`;
+      window.location.href = `https://topclass1.vercel.app/orders/?user=${userParams}`;
     } else {
       window.location.href = "/login";
     }

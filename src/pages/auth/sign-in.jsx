@@ -21,7 +21,7 @@ export function SignIn() {
     setShowPassword(!showPassword);
   };
 
-  const handleLogin = async (e) => {
+const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post('https://toptachesapi3.onrender.com/auth/login', {
@@ -30,6 +30,14 @@ export function SignIn() {
       });
       
       if (response.data.success) {
+        const user = {
+          USR: response.data.data.USR,
+          EMAILUSR: response.data.data.EMAILUSR,
+          ID: response.data.data.ID,
+          NOMUSR: response.data.data.NOMUSR,
+          TELEP: response.data.data.TELEP
+        };
+        localStorage.setItem("currentUser", JSON.stringify(user));
         localStorage.setItem("loggedInUser", response.data.data.USR);
         // Redirect to dashboard
         navigate('/dashboard/home');
@@ -38,6 +46,7 @@ export function SignIn() {
       setErrorMessage('Nom d\'utilisateur ou mot de passe incorrect');
     }
   };
+
 
   return (
     <section className="m-8 font-poppins flex gap-4">

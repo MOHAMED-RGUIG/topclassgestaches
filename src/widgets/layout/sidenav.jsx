@@ -36,7 +36,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
           <ArrowLeftIcon strokeWidth={2.5} className="h-5 w-5 text-blue-gray-500" /> {/* Slide back icon */}
         </IconButton>
 
-        <Link to="https://topclass1.vercel.app/" className="py-6 px-8 text-center mt-6">
+        <Link to="https://topclass1.vercel.app/homescreen" className="py-6 px-8 text-center mt-6">
           {/* Replace brandName text with an image */}
           <img
             src={brandImg}

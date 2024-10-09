@@ -8,6 +8,7 @@ export * from "@/pages/dashboard/pageonhold";
 export * from "@/pages/dashboard/pageonholdorder";
 export * from "@/pages/dashboard/pageonholdpanier";
 export * from "@/pages/dashboard/logout";
-export * from "@/pages/dashboard/ifram"; 
-export * from "@/pages/dashboard/iframorder";
-export * from "@/pages/dashboard/iframpanier";
+export { default as SecondAppEmbed } from "@/pages/dashboard/ifram"; 
+export { default as SecondAppEmbedOrder } from "@/pages/dashboard/iframorder";
+export { default as SecondAppEmbedPanier } from "@/pages/dashboard/iframpanier";
+

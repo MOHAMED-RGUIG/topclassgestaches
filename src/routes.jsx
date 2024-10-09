@@ -11,8 +11,9 @@ import {
   ServerStackIcon,
   RectangleStackIcon,
   BellIcon,
+  HeartIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications , AddTask, CreateAccount, PageOnHold,} from "@/pages/dashboard";
+import { Home, Profile, Tables, Notifications , AddTask, CreateAccount, PageOnHold, PageOnHoldOrder, PageOnHoldPanier,} from "@/pages/dashboard";
 
 
 const icon = {
@@ -24,7 +25,7 @@ export const routes = [
     layout: "dashboard",
     pages: [
       {
-        icon: <HomeIcon {...icon} />,
+        icon: < HomeIcon {...icon} />,
         name: "Dashboard", // Task list
         path: "/home",
         element: <Home />,
@@ -43,16 +44,22 @@ export const routes = [
       },
       {
         icon: <ShoppingCartIcon {...icon} />,
-        name: "Commande", // Add order
+        name: "Ajouter Commande", // Add order
         path: "/ajouter-commande",
         element: <PageOnHold />, // Assuming you have a component for this
       },
-      /*{
+      {
+        icon: <HeartIcon {...icon} />,
+        name: "Panier commandes", // List orders
+        path: "/panier-commandes",
+        element: <PageOnHoldPanier />, // Assuming you have a component for this
+      },
+      {
         icon: <ListBulletIcon {...icon} />,
         name: "Liste commandes", // List orders
         path: "/liste-commandes",
-        element: <PageOnHold />, // Assuming you have a component for this
-      },*/
+        element: <PageOnHoldOrder />, // Assuming you have a component for this
+      },
       {
         icon: <TableCellsIcon {...icon} />,
         name: "Liste tâches", // Task list

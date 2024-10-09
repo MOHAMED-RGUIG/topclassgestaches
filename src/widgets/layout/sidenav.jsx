@@ -22,7 +22,7 @@ export function Sidenav({ brandImg, brandName, routes }) {
     <aside
       className={`${sidenavTypes[sidenavType]} ${
         openSidenav ? "translate-x-0" : "-translate-x-80"
-      } fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-56 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100`} // Changed w-72 to w-56 for smaller width
+      } fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-56 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100`}
     >
       <div className="relative">
         <IconButton
@@ -33,16 +33,15 @@ export function Sidenav({ brandImg, brandName, routes }) {
           className="absolute left-0 top-0 grid xl:hidden"
           onClick={() => setOpenSidenav(dispatch, false)}
         >
-          <ArrowLeftIcon strokeWidth={2.5} className="h-5 w-5 text-blue-gray-500" /> {/* Slide back icon */}
+          <ArrowLeftIcon strokeWidth={2.5} className="h-5 w-5 text-blue-gray-500" />
         </IconButton>
 
-        <Link to="https://topclass1.vercel.app/homescreen" className="py-6 px-8 text-center mt-6">
-          {/* Replace brandName text with an image */}
+        <Link to="https://topclass.ma/" className="py-6 px-8 text-center mt-6">
           <img
             src={brandImg}
             alt="Brand Logo"
             className="mx-auto h-12 w-auto"
-            style={{ width: "80px", height: "auto" }} // Adjusted logo size for smaller sidebar
+            style={{ width: "80px", height: "auto" }}
           />
         </Link>
       </div>
@@ -73,13 +72,13 @@ export function Sidenav({ brandImg, brandName, routes }) {
                           ? "white"
                           : "blue-gray"
                       }
-                      className="flex items-center gap-2 px-3 capitalize" // Reduced padding and gap for smaller buttons
+                      className="flex items-center gap-1.5 px-2 py-2 text-xs capitalize" // Reduced padding, gap, and text size for smaller buttons
                       fullWidth
                     >
                       {icon}
                       <Typography
                         color="inherit"
-                        className="font-medium capitalize text-sm" // Made the text smaller
+                        className="font-medium capitalize text-xs" // Reduced the font size to xs
                       >
                         {name}
                       </Typography>
@@ -96,8 +95,8 @@ export function Sidenav({ brandImg, brandName, routes }) {
 }
 
 Sidenav.defaultProps = {
-  brandImg: "/img/logo_footer.png", // Default image path
-  brandName: "TopClass", // Default brand name if no image is provided
+  brandImg: "/img/logo_footer.png",
+  brandName: "TopClass",
 };
 
 Sidenav.propTypes = {

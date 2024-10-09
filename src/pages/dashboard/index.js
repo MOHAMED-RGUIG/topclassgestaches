@@ -6,3 +6,4 @@ export * from "@/pages/dashboard/addtask";
 export * from "@/pages/dashboard/creationcompte";
 export * from "@/pages/dashboard/pageonhold";
 export * from "@/pages/dashboard/logout";
+export { default as SecondAppEmbed } from "@/pages/dashboard/ifram"; 
